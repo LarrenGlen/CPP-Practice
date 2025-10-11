@@ -1,28 +1,33 @@
-
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int num;
-    cout<<"input a number";
-    cin>>num;
-    
-
-    while(num >=10)
-        {
-            int sum=0,r;
-            while(num>0)
-            {
-            r=num%10;
-            num=num/10;
-            sum=sum+r;
+class Solution {
+public:
+    int addDigits(int num) {
+        int sum;
+        while (num >= 10) {
+            sum = 0;
+            while (num > 0) {
+                int r = num % 10;
+                num = num / 10;
+                sum += r;
             }
-            num=sum;
+            num = sum;
         }
-    cout<<"the number divised to smallest 2 digit is"<<num;
-    
-        return 0;
-}
+        return sum;
+    }
+};
 
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    Solution sol;
+    int result = sol.addDigits(num);
+
+    cout << "The result of repeatedly adding digits is: " << result << endl;
+
+    return 0;
+}
 
