@@ -1,0 +1,22 @@
+//reading and writing  a string usuing get
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char s1[50]; 
+    char s2[50]; 
+    cout<<"enter your name ";
+    cin.get(s1,50);
+    cout<<"welcome "<<s1<<endl;
+    
+    //wont print the next line as the null character has considered enter as the next charcater use cin.ignore
+    
+    cin.ignore();
+    cout<<"enter your name again ";
+    cin.get(s2,50);
+    cout<<"welcome "<<s2<<endl;
+        
+    return 0;
+}

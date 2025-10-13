@@ -1,0 +1,19 @@
+//reading and writing  a string usuing getline 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char s1[50]; 
+    char s2[50]; 
+    cout<<"enter your name ";
+    cin.getline(s1,50);
+    cout<<"welcome "<<s1<<endl;
+    
+    cout<<"enter your name again ";
+    cin.getline(s2,50);
+    cout<<"welcome "<<s2<<endl;
+        
+    return 0;
+}
