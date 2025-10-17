@@ -1,0 +1,6 @@
+operations performe in pointers 
+p++   moves to h enext location
+P--   moves to the previous location
+p=p+2  moves two locations forward 
+p=p-2  moves two locations backward 
+d=p-q distance between the pointers 
